@@ -54,7 +54,7 @@ function mostrarLibros(arrayLibros) {
                 <div class=contenedorVerCarrito>
                     <button id=verCarrito${libro.id} class=oculto>Ver carrito</button>
                     <div id=contenedorLibroAgregado${libro.id} class=oculto>
-                        <p><img src="../icon/icono-verificacion.png">¡Libro agregado!</p>
+                        <p><img src="./icon/icono-verificacion.png">¡Libro agregado!</p>
                     </div>
                 </div>
             `
@@ -254,7 +254,7 @@ function actualizarCarrito() {
                     <button class=botonAumentarRestar id=botonMas${libro.id}>+</button>
                 </div>
                 <button class=eliminar id="eliminar${libro.id}">
-                    <img class="btnEliminar" data-id=${libro.id} src="../icon/icons-eliminar.png"
+                    <img class="btnEliminar" data-id=${libro.id} src="./icon/icons-eliminar.png"
                 </button>
             </div>
         `
