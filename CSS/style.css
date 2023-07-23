@@ -1,0 +1,532 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #eee;
+}
+
+h1 {
+    margin: 4rem auto;
+    text-align: center;
+    font-size: 4rem;
+    color: #f87e04;
+}
+
+h2 {
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#contenedorPrincipal {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjetaProducto {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 18rem;
+    align-items: center;
+    border: 1px solid #7a7a7a;
+    margin: 1rem;
+    margin-top: 0;
+    padding: 1.5rem;
+    background-color: #b5bac9;
+}
+
+.tarjetaProducto p {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.imagen {
+    width: 30rem;
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#section {
+    background-color: #b5bac9;
+    width: 20%;
+    height: 70rem;
+    margin-left: 1rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #7a7a7a;
+}
+
+.contenedorBusqueda {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#input {
+    margin: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    height: 3rem;
+}
+
+#botonBuscar {
+    margin-right: 1rem;
+    width: 5rem;
+    height: 3.6rem;
+    background-color: #c76504;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    color: white;
+}
+
+#botonBuscar:hover {
+    cursor: pointer;
+    background-color: #dc7106;
+    transition: all .3s;
+}
+
+#iconoCarrito {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    background-color: #c76504;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    color: white;
+}
+
+#iconoCarrito:hover {
+    cursor: pointer;
+    background-color: #dc7106;
+    transition: all .3s;
+}
+
+.titulosFiltros {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.filtroCategoria {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 30rem;
+    background-color: #c76504;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.filtroCategoria:hover {
+    cursor: pointer;
+    background-color: #dc7106;
+    transition: all .3s;
+}
+
+.precios {
+    display: flex;
+    margin: 2rem;
+    font-size: 1.7rem;
+}
+
+.precios label {
+    flex-basis: 10rem;
+}
+
+.precios input {
+    margin-left: 2rem;
+}
+
+#filtrarPrecio {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 15rem;
+    height: 4rem;
+    background-color: #c76504;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 12rem;
+}
+
+#filtrarPrecio:hover {
+    cursor: pointer;
+    background-color: #dc7106;
+    transition: all .3s;
+}
+
+#carritoContenedor {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#carrito {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+#carrito h3 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#carrito p {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.oculto {
+    display: none
+}
+
+.btnAgregarCarrito {
+    padding: 1rem;
+    width: 20rem;
+    background-color: #c76504;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.btnAgregarCarrito:hover {
+    cursor: pointer;
+    background-color: #dc7106;
+    transition: all .3s;
+}
+
+.contenedorVerCarrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorVerCarrito button {
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+}
+
+.contenedorVerCarrito button:hover {
+    cursor: pointer;
+    background-color: rgb(3, 102, 3);
+    transition: all .3s;
+}
+
+.contenedorVerCarrito p {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.6rem;
+    background-color: #eee;
+    border: 2px solid green;
+    border-top-right-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedorVerCarrito p img {
+    margin: 0.5rem;
+}
+
+
+#contenedorFinalizar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#finalizarCompra {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background-color: #c76504;
+    color: #fff;
+    border: none;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+}
+
+#finalizarCompra:hover {
+    background-color: #dc7106;
+    transition: all .3s;
+}
+
+.alertCompra {
+    font-size: 1.3rem;
+}
+
+.contenedorPadreCantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorAumentarRestar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#cantidad {
+    width: 4rem;
+    height: 2.3rem;
+    background-color: #ccc;
+}
+
+.botonAumentarRestar {
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: #f87e04;
+    color: white;
+}
+
+.botonAumentarRestar:hover {
+    background-color: #dc7106;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.eliminar {
+    border: none;
+    margin-left: 2rem;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.eliminar:hover {
+    cursor: pointer;
+}
+
+
+/* ------------ RESPONSIVE ------------*/
+
+@media (max-width: 1500px) {
+    h1 {
+        font-size: 3rem;
+        margin: 2rem auto;
+    }
+
+    #container {
+        max-width: 90%;
+    }
+
+    .tarjetaProducto {
+        margin: 0.5rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+
+    .imagen {
+        width: 20rem;
+        height: 25rem;
+    }
+
+    #section {
+        width: 30%;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contenedorBusqueda {
+        margin-top: 3rem;
+    }
+
+    #input {
+        width: 15rem;
+        height: 2.5rem;
+    }
+
+    #botonBuscar {
+        width: 5rem;
+        height: 3rem;
+    }
+
+    .filtroCategoria {
+        width: 25rem;
+    }
+
+    .precios {
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .precios label {
+        flex-basis: 8rem;
+    }
+
+    .precios input {
+        margin-left: 1.5rem;
+    }
+
+    #filtrarPrecio {
+        margin-left: 10rem;
+        margin-bottom: 2rem;
+        width: 7rem;
+        height: 4.5rem;
+    }
+
+    #carrito {
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    #carrito h4 {
+        font-size: 1.3rem;
+    }
+
+    #carrito p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 890px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 1rem auto;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #container {
+        max-width: 95%;
+    }
+
+    .tarjetaProducto {
+        margin: 0.5rem;
+        padding: 0.8rem;  
+    }
+
+    .imagen {
+        width: 15rem;
+        height: 18rem;
+        object-fit: cover;
+    }
+
+    #section {
+        width: 40%;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contenedorBusqueda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    #input {
+        width: 90%;
+        height: 2.2rem;
+        margin-bottom: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    #botonBuscar {
+        width: 6rem;
+        height: 3.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #iconoCarrito {
+        font-size: 1.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .filtroCategoria {
+        width: 20rem;
+    }
+
+    .precios {
+        margin: 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    .precios label {
+        flex-basis: 7rem;
+    }
+
+    .precios input {
+        margin-left: 1rem;
+    }
+
+    #filtrarPrecio {
+        margin-left: 8rem;
+        margin-bottom: 1.5rem;
+        width: 7.5rem;
+        height: 4.2rem;
+    }
+
+    #carrito {
+        height: auto;
+        margin-top: 1.5rem;
+    }
+
+    #carrito h4 {
+        font-size: 1.2rem;
+    }
+
+    #carrito p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .precios label {
+        flex-basis: 100%;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .precios input {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+}

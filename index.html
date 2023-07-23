@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros del Sur</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <a href="index.html">
+        <h1>Libros del Sur</h1>
+    </a>
+    <div id="contenedorPrincipal">
+        <section id="section">
+            <!-- Input, botón para buscar y botón para ir al carrito -->
+            <div class="contenedorBusqueda">
+                <input id="input" placeholder="Ingrese título o autor">
+                <button id="botonBuscar">Buscar</button>
+                <button id="iconoCarrito">
+                    <img src="./icon/icono-carrito.png" alt="Ícono carrito">
+                </button>
+            </div>
+            <!-- Botones para filtrar por categoría -->
+            <h3 class="titulosFiltros">Categorías</h3>
+            <a href="index.html">
+                <button class="filtroCategoria">Inicio</button>
+            </a>
+            <button id="filtroHistoria" class="filtroCategoria" value="historia">Historia</button>
+            <button id="filtroFilosofia" class="filtroCategoria" value="filosofia">Filosofía</button>
+            <button id="filtroNovelas" class="filtroCategoria" value="novelas">Novelas</button>
+
+            <!-- Filtro por precio -->
+            <h3 class="titulosFiltros">Filtrar por precio</h3>
+            <div class="precios">
+                <label for="precioMin">Precio mínimo:</label>
+                <input type="number" id="precioMin" min="0">
+            </div>
+            <div class="precios">
+                <label for="precioMax">Precio máximo:</label>
+                <input type="number" id="precioMax" min="0">
+            </div>
+            <button id="filtrarPrecio">Filtrar</button>
+        </section>
+
+        <!-- Contenedor principal y carrito -->
+        <div id="padreContainer">
+            <div id="container"></div>
+        </div>
+        <div id="carritoContenedor" class="oculto">
+            <div id="carrito"></div>
+            <div id="contenedorFinalizar">
+                <button id="finalizarCompra">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+{
+    "libros":[
+        {
+            "id":2,
+            "titulo":"Así habló Zaratustra",
+            "autor":"Nietzsche",
+            "categoria":"Filosofia",
+            "stock":3,
+            "precio":7500,
+            "rutaImagen":"../images/zaratustra.webp"
+        },
+        {
+            "id":4,
+            "titulo":"Los miserables",
+            "autor":"Victor Hugo",
+            "categoria":"Novelas",
+            "stock":2,
+            "precio":10000,
+            "rutaImagen":"../images/los-miserables.webp"
+        },
+        {
+            "id":5,
+            "titulo":"SPQR",
+            "autor":"Mary Beard",
+            "categoria":"Historia",
+            "stock":3,
+            "precio":8000,
+            "rutaImagen":"../images/spqr.webp"
+        },
+        {
+            "id":7,
+            "titulo":"Guerra y paz",
+            "autor":"Tolstoi",
+            "categoria":"Novelas",
+            "stock":1,
+            "precio":11300,
+            "rutaImagen":"../images/guerra-paz.webp"
+        },
+        {
+            "id":10,
+            "titulo":"La edad media",
+            "autor":"Umberto Eco",
+            "categoria":"Historia",
+            "stock":2,
+            "precio":12000,
+            "rutaImagen":"../images/edad-media.webp"
+        },
+        {
+            "id":13,
+            "titulo":"Crimen y castigo",
+            "autor":"Dostoievsky",
+            "categoria":"Novelas",
+            "stock":3,
+            "precio":6800,
+            "rutaImagen":"../images/crimen-castigo.webp"
+        },
+        {
+            "id":14,
+            "titulo":"El ser y la nada",
+            "autor":"Sartre",
+            "categoria":"Filosofia",
+            "stock":2,
+            "precio":10800,
+            "rutaImagen":"../images/ser-nada.webp"
+        },
+        {
+            "id":17,
+            "titulo":"Discurso del método",
+            "autor":"Descartes",
+            "categoria":"Filosofia",
+            "stock":6,
+            "precio":9800,
+            "rutaImagen":"../images/discruso-metodo.webp"
+        },
+        {
+            "id":24,
+            "titulo":"Césares",
+            "autor":"José Manuel Roldán",
+            "categoria":"Historia",
+            "stock":2,
+            "precio":7000,
+            "rutaImagen":"../images/cesares.webp"
+        },
+        {
+            "id":32,
+            "titulo":"Historia de dos ciudades",
+            "autor":"Charles Dickens",
+            "categoria":"Novelas",
+            "stock":4,
+            "precio":10200,
+            "rutaImagen":"../images/dos-ciudades.webp"
+        },
+        {
+            "id":44,
+            "titulo":"Historia del siglo XX",
+            "autor":"Eric Hobsbawm",
+            "categoria":"Historia",
+            "stock":5,
+            "precio":11600,
+            "rutaImagen":"../images/historia-sigloxx.webp"
+        },
+        {
+            "id":48,
+            "titulo":"Critica de la razon pura",
+            "autor":"Immanuel Kant",
+            "categoria":"Filosofia",
+            "stock":3,
+            "precio":13100,
+            "rutaImagen":"../images/critica-razon.webp"
+        }
+    ]
+}
